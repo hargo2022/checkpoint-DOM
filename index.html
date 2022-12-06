@@ -1,0 +1,135 @@
+<html lang="en">
+
+<head>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+    
+    
+    
+    <link rel="stylesheet" href="https://mdbcdn.b-cdn.net/wp-content/themes/mdbootstrap4/docs-app/css/dist/mdb5/standard/core.min.css">
+
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body class="mdb-skin-custom " data-mdb-spy="scroll" data-mdb-target="#scrollspy" data-mdb-offset="250">
+    <div class="headercart" data-mdb-toggle="modal" data-mdb-target="#cartModal" onclick="return viewCart()">
+        <span class="border border-primary">
+        <span class="cartText">Panier : </span>
+        <span id="cartCount">0</span>
+        </span>
+    </div>
+    <section style="background-color: #eee;">
+    <div class="container py-5">
+      <div class="row">
+        <div class="col-md-12 col-lg-4 mb-4 mb-lg-0">
+          <div class="card text-black">
+            <img src="https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-product-cards/img1.webp"
+              class="card-img-top" alt="iPhone" />
+            <div class="card-body">
+              <div class="text-center mt-1">
+                <h4 class="card-title">iPhone X</h4>
+                <h6 class="text-primary mb-1 pb-3">Starting at $399</h6>
+                <input type="hidden" class="price" value="399">
+              </div>
+  
+              <div class="d-flex flex-row text-center">
+                <div class="divcenter">
+                  <button type="button" class="btn btn-primary minus" onclick="minusQuantity(this)">-</button>
+                  <input type="text" value="1" class="quatity" size="2">
+                  <button type="button" class="btn btn-primary plus" onclick="plusQuantity(this)">+</button>
+                </div>
+            </div>
+
+            <div class="d-flex flex-row">
+              
+              <button type="button" class="btn btn-danger flex-fill ms-1 addcart" onclick="addToCart(this)">Ajout au panier</button>
+            </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4 mb-4 mb-md-0">
+          <div class="card text-black">
+            <img src="https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-product-cards/img2.webp"
+              class="card-img-top" alt="iPhone" />
+            <div class="card-body">
+              <div class="text-center mt-1">
+                <h4 class="card-title">iPhone 11</h4>
+                <h6 class="text-primary mb-1 pb-3">Starting at $499</h6>
+                <input type="hidden" class="price" value="499">
+              </div>
+  
+              <div class="d-flex flex-row text-center">
+                <div class="divcenter">
+                    <button type="button" class="btn btn-primary minus" onclick="minusQuantity(this)">-</button>
+                    <input type="text" value="1" class="quatity" size="2">
+                    <button type="button" class="btn btn-primary plus" onclick="plusQuantity(this)">+</button>
+                  </div>
+            </div>
+
+            <div class="d-flex flex-row">
+              
+              <button type="button" class="btn btn-danger flex-fill ms-1 addcart" onclick="addToCart(this)">Ajout au panier</button>
+            </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4 mb-4 mb-md-0">
+          <div class="card text-black">
+            <img src="https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-product-cards/img3.webp"
+              class="card-img-top" alt="iPhone" />
+            <div class="card-body">
+              <div class="text-center mt-1">
+                <h4 class="card-title">iPhone 11 Pro</h4>
+                <h6 class="text-primary mb-1 pb-3">Starting at $599</h6>
+                <input type="hidden" class="price" value="599">
+              </div>
+  
+              <div class="d-flex flex-row text-center">
+                <div class="divcenter">
+                    <button type="button" class="btn btn-primary minus" onclick="minusQuantity(this)">-</button>
+                    <input type="text" value="1" class="quatity" size="2">
+                    <button type="button" class="btn btn-primary plus" onclick="plusQuantity(this)">+</button>
+                  </div>
+              </div>
+  
+              <div class="d-flex flex-row">
+                
+                <button type="button" class="btn btn-danger flex-fill ms-1 addcart" onclick="addToCart(this)">Ajout au panier</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Modal -->
+<div class="modal fade" id="cartModal" tabindex="-1" aria-labelledby="cartModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="cartModalLabel">Panier</h5>
+          <button type="button" class="btn-close" data-mdb-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+            <table class="table align-middle mb-0 bg-white" id="productsTable">
+                <thead class="bg-light">
+                  <tr>
+                    <th>Produit</th>
+                    <th>Prix</th>
+                    <th>Quantité</th>
+                    <th>Actions</th>
+                  </tr>
+                </thead>
+                <tbody>
+
+                </tbody>
+            </table> 
+        </div>
+      </div>
+    </div>
+  </div>
+  <script type="text/javascript" src="./mdb.min.js"></script>
+  <script src="./script.js"></script>
+</body>
+
+</html>

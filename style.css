@@ -1,0 +1,16 @@
+.divcenter {
+    margin: 0 auto;
+    padding: 5px;
+}
+
+.headercart {
+    position: absolute;
+    left: 90%;
+    top:10px;
+    cursor: pointer;
+}
+
+.border {
+    padding: 10px;
+    margin: 10px;
+}
